@@ -2,15 +2,15 @@
 //Linear Search
 //n elemanlý bir dizide x elemanýný arar, bulursa 1 bulmazsa 0
 
-int find(int a[],int n, int x)
+int ara(int a[],int n, int x)
 {
-	int result=0;
+	int sonuc=0;
 	for(int i=0;i<n;i++)
 	{
 		if (a[i]==x)
-		result=1;
+		sonuc=1;
 	}
-	return result;
+	return sonuc;
 }
 
 int main(){
@@ -18,13 +18,13 @@ int main(){
  	int y;
 	int array[]={4,5,6,7,100,2};
 	
-	printf("Please enter a number:");
+	printf("Aranacak sayi giriniz:");
 	scanf("%d",&y);
-	int value=find(array,6,y);
-	if (value==0)
-		printf("Not found");
+	int deger=ara(array,6,y);
+	if (deger==0)
+		printf("Bulunamadi");
 	else 
-	 printf("Found");
+		printf("Bulundu");
 	
 	return 0;
 }
